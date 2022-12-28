@@ -13,9 +13,9 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Movieprovider')
-API_ID = int(environ.get('API_ID', '21973813'))
-API_HASH = environ.get('API_HASH', 'c578b64ac7af52f363f9e0ebfbc67923')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5833765053:AAG7sgRPQ0NV-XAM3Vg7CjXBlTvF17H0H1k")
+API_ID = int(environ.get('API_ID', '21973873'))
+API_HASH = environ.get('API_HASH', 'c578b64ac7af52f363f9e0ebagc67923')
+BOT_TOKEN = environ.get('BOT_TOKEN', "5833765053:AAG7sgRPQ0NV-XAM3Vg7CjXBlTvkalvjvg")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -37,7 +37,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rishi08:Rishi08@cluster0.d97t0hf.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rishii08:rihit@cluster0.d97t0hf.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rishi08")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -48,14 +48,14 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://telegram.dog/Rkbotzbot')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001650225505))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001699469796))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -10016502258505))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -10016994697796))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', '')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://youtu.be/sd3fDrBBgt4')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001341141783))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001341141783))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -10013411417873))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -10013411417853))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
