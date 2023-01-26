@@ -13,49 +13,49 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Movieprovider')
-API_ID = int(environ.get('API_ID', '21973873'))
+API_ID = int(environ.get('API_ID', '27313081'))
 API_HASH = environ.get('API_HASH', 'c578b64ac7af52f363f9e0ebagc67923')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5833765053:AAG7sgRPQ0NV-XAM3Vg7CjXBlTvkalvjvg")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8f9d9305fb438a69347682acda72d38f")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/5c586e00f34665267ab5b.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/2817d324022fe485880ac.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/94750f782f45f592b823f.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/8ee413afc32e5b393e790.jpg")
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/5c586e00f34665267ab5b.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5313004751').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001862900307').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5313004751').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '995932132').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001614580625').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('-1001327884100')
+auth_channel = environ.get('-1001629622989')
 auth_grp = environ.get('')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rishii08:rihit@cluster0.d97t0hf.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://MM:MM@cluster0.dwi8wj1.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rishi08")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ipopcornofficialgroup')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/rk_update')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://telegram.dog/Rkbotzbot')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ip')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/rte')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://telegrtzbot')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -10016502258505))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -10016994697796))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -100165505))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -10016994))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', '')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://youtu.be/sd3fDrBBgt4')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -10013411417873))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -10013411417853))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001620131835))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001620131835))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
@@ -85,8 +85,8 @@ SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 15))
 
 # URL SHORTNER
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'Mdisklink.link')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'a6a5a4f12eb9543f68e9f5d12a79f517d867655f')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', '')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
